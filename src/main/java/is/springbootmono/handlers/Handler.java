@@ -89,7 +89,7 @@ public class Handler implements HandlerInterface {
         }
     }
 
-    /*Резервный служебный метод, который возвраает строку по умолчанию */
+    /*Резервный служебный метод, который возвращает строку по умолчанию */
     private Mono<String> sayHelloFallback() {
         return Mono.just("Hello, Stranger");
     }
