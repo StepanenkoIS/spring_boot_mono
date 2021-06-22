@@ -130,7 +130,7 @@ public class HomeController {
     public Mono<String> getTestMono9() {
         WebClient client = WebClient.create("http://localhost:8080");
         Mono<String> mono = client.get()
-                .uri("/test{n}", "4")
+                .uri("/test{n}", "2")
                 .retrieve()
                 .bodyToMono(String.class);
         return mono;
